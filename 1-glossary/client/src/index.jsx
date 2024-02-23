@@ -1,9 +1,18 @@
 import React from "react";
 import { render } from "react-dom";
 
-render(
-  <div>
-    <p>Hello, World!</p>
-  </div>,
-  document.getElementById("root")
-);
+
+const App = () => {
+
+  return (
+    <div>
+
+      <List/>
+      <AddWords/>
+    </div>
+
+  )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
